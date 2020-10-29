@@ -86,7 +86,7 @@ class FilterField extends \acf_field {
 									<?php
 									checked( in_array(
 										$term_id,
-										array_map( 'absint', $field['value']['terms'] ?? [] ),
+										array_map( 'absint', $field['value']['taxonomies'][ $taxonomy_obj->name ]['terms'] ?? [] ),
 										true
 									) );
 									?>
