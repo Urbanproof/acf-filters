@@ -80,7 +80,7 @@ class FilterField extends \acf_field {
 						<li>
 							<label>
 								<input
-									name="<?php echo esc_attr( $field['name'] ); ?>[terms][]"
+									name="<?php echo esc_attr( $field['name'] ); ?>[taxonomies][<?php echo esc_attr( $taxonomy_obj->name ); ?>][terms][]"
 									type="checkbox"
 									value="<?php echo esc_attr( $term_id ); ?>"
 									<?php
