@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="PHPCS Configuration">
+  <file>.</file>
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array" value="acf-filters" />
+    </properties>
+  </rule>
+  <!-- <file>includes/</file> -->
+  <rule ref="UWPCS"/>
+</ruleset>

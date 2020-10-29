@@ -1,0 +1,42 @@
+{
+    "name": "urbanproof/acf-filters",
+    "description": "Adds Filters-field type to Advanced Custom Fields- plugin",
+    "type": "wordpress-plugin",
+    "license": "GPLv2 or later",
+    "authors": [
+        {
+            "name": "Iikka Timlin",
+            "homepage": "https://github.com/Urbanproof/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Urbanproof/acf-filters/issues",
+        "docs": "https://github.com/Urbanproof/acf-filters"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Urbanproof/wp-coding-standards.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Urbanproof/phpcs-pre-commit.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "urbanproof/phpcs-pre-commit": "^1.0.0"
+    },
+    "require-dev": {
+        "urbanproof/wp-coding-standards": "^1.0"
+    },
+    "scripts": {
+        "install-pre-commit-hook": ["bash ./vendor/urbanproof/phpcs-pre-commit/setup.sh"],
+        "post-install-cmd": ["@install-pre-commit-hook"],
+        "test": [
+          "phpcs"
+        ]
+      }
+
+}
