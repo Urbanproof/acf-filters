@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Advanced Custom Fields: Filters-field
  * Description: Adds new field type where you can choose filters to build a post grid later on.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Iikka Timlin
  * License:     GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
